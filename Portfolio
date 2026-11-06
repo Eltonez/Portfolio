@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Elton Roque Cantú Junior">
+  <title>Elton Roque Cantú Junior | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0c1523;
+      --panel: #142236;
+      --text: #f0f2f4;
+      --muted: #aebccd;
+      --gold: #d6b878;
+      --line: #304057;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.75 system-ui, Arial, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      max-width: 1040px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      text-decoration: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a:hover { color: var(--gold); }
+
+    main {
+      max-width: 1040px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    .hero { padding: 110px 0 100px; }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .23em;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      margin: 18px 0;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin: 10px 0 22px;
+    }
+
+    h3 {
+      font-size: 23px;
+      margin: 0 0 12px;
+    }
+
+    .lead {
+      font-size: 21px;
+      color: #d9e1eb;
+      max-width: 760px;
+    }
+
+    p { color: var(--muted); }
+
+    .hero p { max-width: 700px; }
+
+    .cta {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 12px 22px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .cta:hover {
+      background: var(--gold);
+      color: var(--bg);
+    }
+
+    section {
+      padding: 68px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .tile {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 26px;
+      border-radius: 8px;
+    }
+
+    .tile p { margin-bottom: 0; }
+
+    .note {
+      border-left: 2px solid var(--gold);
+      padding-left: 22px;
+      max-width: 780px;
+    }
+
+    .contact { padding-bottom: 95px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      text-align: center;
+      padding: 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .hero { padding: 80px 0; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 55px 0; }
+      .links { gap: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="#home">ERCJ</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="eyebrow">
+        Professional & Creative Portfolio
+      </div>
+
+      <h1>Elton Roque<br>Cantú Junior</h1>
+
+      <div class="lead">
+        Analyst · Researcher · Writer · Translator
+      </div>
+
+      <p>
+        International Relations graduate with a focus
+        on critical thinking, research, literature,
+        and language. Bringing analytical rigor and
+        creative perspective to complex ideas and
+        meaningful content.
+      </p>
+
+      <a class="cta" href="#about">
+        Explore my profile
+      </a>
+    </div>
+
+    <section id="about">
+      <div class="eyebrow">01 / Introduction</div>
+      <h2>About Me</h2>
+
+      <p>
+        I hold a Bachelor's degree in International
+        Relations and have a strong interest in
+        research, communication, literary analysis,
+        and storytelling. My academic background has
+        helped me develop a thoughtful approach to
+        interpreting information, understanding
+        different perspectives, and communicating
+        ideas clearly.
+      </p>
+
+      <p>
+        I am fluent in English and regularly engage
+        with English-language books, audiobooks, and
+        other media. Alongside my analytical interests,
+        I work on personal creative writing and
+        narrative development projects.
+      </p>
+    </section>
+
+    <section id="expertise">
+      <div class="eyebrow">02 / Capabilities</div>
+      <h2>Core Skills</h2>
+
+      <div class="grid">
+        <article class="tile">
+          <h3>Research & Analysis</h3>
+          <p>
+            Critical thinking, information synthesis,
+            contextual research, and careful
+            evaluation of written material.
+          </p>
+        </article>
+
+        <article class="tile">
+          <h3>Language & Translation</h3>
+          <p>
+            Fluent English, strong reading and
+            listening comprehension, and interest
+            in accurate, context-sensitive translation
+            between Portuguese and English.
+          </p>
+        </article>
+
+        <article class="tile">
+          <h3>Literature & Writing</h3>
+          <p>
+            Creative writing, narrative structure,
+            literary interpretation, and familiarity
+            with books and audiobooks.
+          </p>
+        </article>
+
+        <article class="tile">
+          <h3>Technical & Collaborative Skills</h3>
+          <p>
+            Advanced Microsoft Office, foundational
+            HTML and CSS, clear communication,
+            and teamwork.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="eyebrow">03 / Creative Perspective</div>
+      <h2>Current Interests</h2>
+
+      <div class="note">
+        <p>
+          I am developing original fiction and
+          worldbuilding projects that explore
+          character, culture, politics, and
+          storytelling. These works are ongoing
+          personal projects, not yet published.
+        </p>
+
+        <p>
+          I am particularly interested in opportunities
+          that combine analysis, language, research,
+          editorial judgment, and creative thinking.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">04 / Connect</div>
+      <h2>Let's Connect</h2>
+
+      <p>
+        Open to professional opportunities in
+        research, content analysis, language-focused
+        work, and related fields.
+      </p>
+
+      <p>
+        Contact details and professional links
+        can be added here before publication.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Elton Roque Cantú Junior · Personal Portfolio
+  </footer>
+</body>
+</html>
